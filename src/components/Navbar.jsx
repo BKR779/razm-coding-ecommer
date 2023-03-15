@@ -9,17 +9,14 @@ export default function Navbar() {
 			<nav className="bg-gray-800">
 				<div className="mx-auto max-w-7x1 px-2 sm:px-6 lg:px-8">
 					<div className="relative flex h-16 items-center justify-start">
-						<div className="">
-							<Link href="/">
-								<Image
-									src="./vercel.svg"
-									alt="vercel"
-									height={100}
-									width={100}
-								></Image>
-							</Link>
-						</div>
-						<div className="flex flex-1 items-center justify-center gap-4">
+						<Link className="relative h-20 w-20" href="/">
+							<Image
+								src="./vercel.svg"
+								alt="vercel"
+								fill
+							></Image>
+						</Link>
+						<div className="flex flex-1 items-center justify-center sm:gap-0 md:gap-4">
 							<Link href="/">
 								<Nav name="Home" />
 							</Link>
